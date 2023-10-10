@@ -1,20 +1,21 @@
 ﻿
+' Temperature Converter
 Public Class Form1
+    'Global variables
     Dim Convertion_Type As String = "CtF"
     Dim celciusValue As String
     Dim fahrenheitValue As String
 
-    Private Sub Main()
-        Convertion_Type = "CtF"
-    End Sub
-
+    'Cconvert Celcius to Farenheit
     Private Function CtF(c As Decimal)
         Return (c * 9 / 5) + 32
     End Function
 
+    'Convert Farenheit to Celcius
     Private Function FtC(f As Decimal)
-        Return (f - 32) * 5 / 9
+        Return (f - 32) * (5 / 9)
     End Function
+
 
     Public Sub celciusInput_TextChanged(sender As Object, e As EventArgs) Handles celciusInput.TextChanged
         celciusValue = celciusInput.Text
@@ -27,8 +28,8 @@ Public Class Form1
     Private Sub convertBtn_Click(sender As Object, e As EventArgs) Handles convertBtn.Click
         If Convertion_Type = "CtF" Then
             If IsNumeric(celciusValue) Then
-                Dim celsiusValue As Double = Me.CtF(celciusValue)
-                fahrenheitInput.Text = celsiusValue.ToString()
+                Dim celsiusValue As Double = Me.CtF(Me.celciusValue)
+                fahrenheitInput.Text = celsiusValue.ToString("F1") ' to 2dp
 
             Else
                 fahrenheitInput.Text = ""
@@ -36,8 +37,8 @@ Public Class Form1
             End If
         ElseIf Convertion_Type = "FtC" Then
             If IsNumeric(fahrenheitValue) Then
-                Dim fahrenheitValue As Double = Me.CtF(fahrenheitValue)
-                celciusInput.Text = fahrenheitValue.ToString()
+                Dim fahrenheitValue As Double = Me.FtC(Me.fahrenheitValue)
+                celciusInput.Text = fahrenheitValue.ToString("F1") 'to 2dp
             Else
                 celciusInput.Text = ""
 
