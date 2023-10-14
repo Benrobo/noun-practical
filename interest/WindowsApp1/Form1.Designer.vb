@@ -163,6 +163,7 @@ Partial Class Form1
         '
         'allowancesTotalInp
         '
+        Me.allowancesTotalInp.Enabled = False
         Me.allowancesTotalInp.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.allowancesTotalInp.Location = New System.Drawing.Point(99, 254)
         Me.allowancesTotalInp.Name = "allowancesTotalInp"
@@ -254,6 +255,7 @@ Partial Class Form1
         '
         'deductionTotalInp
         '
+        Me.deductionTotalInp.Enabled = False
         Me.deductionTotalInp.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.deductionTotalInp.Location = New System.Drawing.Point(495, 254)
         Me.deductionTotalInp.Name = "deductionTotalInp"
@@ -272,6 +274,7 @@ Partial Class Form1
         '
         'grosspayInp
         '
+        Me.grosspayInp.Enabled = False
         Me.grosspayInp.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.grosspayInp.Location = New System.Drawing.Point(258, 319)
         Me.grosspayInp.Name = "grosspayInp"
@@ -281,6 +284,7 @@ Partial Class Form1
         '
         'netpayInp
         '
+        Me.netpayInp.Enabled = False
         Me.netpayInp.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.netpayInp.Location = New System.Drawing.Point(258, 373)
         Me.netpayInp.Name = "netpayInp"
