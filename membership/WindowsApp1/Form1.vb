@@ -1,7 +1,6 @@
 ﻿Public Class Form1
     Dim initialFee As Double = 25000
     Dim feeVal As Double = 4
-    Dim outputVal As Double
     Dim currentFee As Double
 
 
